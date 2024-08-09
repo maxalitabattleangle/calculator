@@ -137,7 +137,7 @@ func findKeyByValue(value int, hashMap map[string]int) string {
 		}
 	}
 
-	return ""
+	panic("Выдача паники, так как в римской системе нет числа " + strconv.Itoa(value))
 }
 
 func testCalculator(romanNumbersMap map[string]int, isRomanNumber bool) {
